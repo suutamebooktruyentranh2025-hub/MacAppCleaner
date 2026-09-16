@@ -27,9 +27,7 @@ let package = Package(
             name: "MacAppCleaner",
             dependencies: ["MacAppCleanerKit"],
             path: "Sources/MacAppCleaner",
-            resources: [
-                .process("Resources")
-            ]
+            exclude: ["Resources"]
         ),
         .testTarget(
             name: "MacAppCleanerTests",

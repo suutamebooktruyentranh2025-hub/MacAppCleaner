@@ -1,5 +1,6 @@
 import SwiftUI
 import AppKit
+import MacAppCleanerKit
 
 enum NavigationSection: String, CaseIterable, Identifiable {
     case uninstaller = "Gỡ ứng dụng"
@@ -32,11 +33,7 @@ struct MainView: View {
     @State private var isShowingPermissionGuide: Bool = false
 
     private var appLogoImage: NSImage? {
-        if let url = Bundle.module.url(forResource: "AppIcon", withExtension: "png"),
-           let img = NSImage(contentsOf: url) {
-            return img
-        }
-        return nil
+        AppBrandIcon.image
     }
 
     var body: some View {

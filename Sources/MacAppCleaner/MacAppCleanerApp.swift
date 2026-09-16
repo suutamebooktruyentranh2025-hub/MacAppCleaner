@@ -1,5 +1,6 @@
 import SwiftUI
 import AppKit
+import MacAppCleanerKit
 
 @main
 struct MacAppCleanerApp: App {
@@ -8,11 +9,7 @@ struct MacAppCleanerApp: App {
     }
 
     private func setAppIcon() {
-        if let iconURL = Bundle.module.url(forResource: "AppIcon", withExtension: "png"),
-           let image = NSImage(contentsOf: iconURL) {
-            NSApplication.shared.applicationIconImage = image
-        } else if let icnsURL = Bundle.module.url(forResource: "AppIcon", withExtension: "icns"),
-                  let image = NSImage(contentsOf: icnsURL) {
+        if let image = AppBrandIcon.image {
             NSApplication.shared.applicationIconImage = image
         }
     }

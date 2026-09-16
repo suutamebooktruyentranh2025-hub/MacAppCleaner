@@ -41,4 +41,4 @@
 | Task 37 | Fix Toggle Button Lockout, In-Memory Filter, Cooperative Task Cancellation & Concurrent Subfolder Scanning | complete | 49 tests passed (2 new in DiskScannerTests), ./scripts/build-app.sh passed, hdiutil verify checksum VALID (exit 0) |
 | Task 38 | Disable Rescan Button During Scanning & Guard Against Concurrent Scans | complete | 49 tests passed, swift build passed, ./scripts/build-app.sh passed, hdiutil verify checksum VALID (exit 0) |
 | Task 39 | Unified Search Bar & Real-time Filtering in Disk Analyzer Tab | complete | 49 tests passed, swift build passed, ./scripts/build-app.sh passed, hdiutil verify checksum VALID (exit 0) |
-
+| Task 40 | Fix Startup Crash by Eliminating Fragile Bundle.module & Providing Safe Native AppIcon Loading | complete | 50 tests passed (AppBrandIconTests), ./scripts/build-app.sh passed, /Applications/MacAppCleaner.app launches cleanly without crash (exit 0) |
